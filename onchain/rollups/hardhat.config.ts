@@ -52,10 +52,14 @@ const networkConfig = (chain: Chain): HttpNetworkUserConfig => {
 
 const config: HardhatUserConfig = {
     networks: {
-        hardhat: mnemonic ? { accounts: { mnemonic } } : {},
+        hardhat: {
+            accounts: mnemonic ? { mnemonic } : undefined,
+            allowUnlimitedContractSize: true,
+        },
         localhost: {
             url: process.env.RPC_URL || "http://localhost:8545",
             accounts: mnemonic ? { mnemonic } : undefined,
+            allowUnlimitedContractSize: true,
         },
         arbitrum: networkConfig(arbitrum),
         arbitrum_goerli: networkConfig(arbitrumGoerli),
