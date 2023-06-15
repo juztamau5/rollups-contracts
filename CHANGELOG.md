@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `ComplexVouchers`: Allows DApp developers to generate more complex vouchers, with extra restrictions. See [RFP #003](https://governance.cartesi.io/t/rfp-003-beginner-solidity-complex-vouchers/90).
+
 ### Removed
 
 - `docker-bake*.hcl`
