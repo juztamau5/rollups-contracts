@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Updated the encoding of inputs, to use `abi.encode` instead of `abi.encodePacked`, to simplify decoding
+
 ### Removed
 
 - `docker-bake*.hcl`
