@@ -87,7 +87,7 @@ contract CartesiDApp is
     mapping(uint256 => uint256) internal voucherBitmask;
 
     /// @notice The ENS registry.
-    ENS public immutable ens;
+    ENS internal immutable ens;
 
     /// @notice The current consensus contract.
     /// @dev See the `getConsensus` and `migrateToConsensus` functions.
