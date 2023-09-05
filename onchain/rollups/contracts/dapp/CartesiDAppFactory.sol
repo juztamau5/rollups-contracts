@@ -13,7 +13,7 @@ import {CartesiDApp} from "./CartesiDApp.sol";
 /// @title Cartesi DApp Factory
 /// @notice Allows anyone to reliably deploy a new `CartesiDApp` contract.
 contract CartesiDAppFactory is ICartesiDAppFactory {
-    ENS public immutable ens;
+    ENS internal immutable ens;
 
     constructor(ENS _ens) {
         ens = _ens;
