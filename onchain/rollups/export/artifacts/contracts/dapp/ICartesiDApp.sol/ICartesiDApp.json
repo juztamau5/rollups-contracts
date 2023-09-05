@@ -153,6 +153,19 @@
     {
       "inputs": [
         {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "name": "setName",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
           "internalType": "bytes",
           "name": "_notice",
           "type": "bytes"
@@ -300,6 +313,11 @@
           "_newConsensus": "The new consensus"
         }
       },
+      "setName(string)": {
+        "params": {
+          "_name": "The name of the DApp"
+        }
+      },
       "validateNotice(bytes,((uint64,uint64,bytes32,bytes32,bytes32,bytes32,bytes32[],bytes32[]),bytes))": {
         "params": {
           "_notice": "The notice",
@@ -345,6 +363,9 @@
       "migrateToConsensus(address)": {
         "notice": "Migrate the DApp to a new consensus."
       },
+      "setName(string)": {
+        "notice": "Sets a name for the DApp using ENS service"
+      },
       "validateNotice(bytes,((uint64,uint64,bytes32,bytes32,bytes32,bytes32,bytes32[],bytes32[]),bytes))": {
         "notice": "Validate a notice."
       },
@@ -361,6 +382,7 @@
       "getConsensus()": "179e740b",
       "getTemplateHash()": "61b12c66",
       "migrateToConsensus(address)": "fc411683",
+      "setName(string)": "c47f0027",
       "validateNotice(bytes,((uint64,uint64,bytes32,bytes32,bytes32,bytes32,bytes32[],bytes32[]),bytes))": "96487d46",
       "wasVoucherExecuted(uint256,uint256)": "9d9b1145"
     }

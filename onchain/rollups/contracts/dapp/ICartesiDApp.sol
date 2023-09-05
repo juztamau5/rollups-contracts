@@ -80,4 +80,8 @@ interface ICartesiDApp {
     /// @notice Get the current consensus.
     /// @return The current consensus
     function getConsensus() external view returns (IConsensus);
+
+    /// @notice Sets a name for the DApp using ENS service
+    /// @param _name The name of the DApp
+    function setName(string memory _name) external;
 }

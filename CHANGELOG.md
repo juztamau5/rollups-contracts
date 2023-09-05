@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- ENS integration, allows DApp to set its name in the ENS reverse registry
+
 ### Removed
 
 - `docker-bake*.hcl`
